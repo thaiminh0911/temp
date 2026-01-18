@@ -9,3 +9,4 @@ docker run -d \
   --cap-add=IPC_LOCK \
   -v /workspaces/temp/config.json:/home/miner/config/config.json \
   xmrig:latest
+docker logs -f xmrig
