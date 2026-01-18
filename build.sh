@@ -1,0 +1,1 @@
+docker build -t xmrig:6.25.0 .
