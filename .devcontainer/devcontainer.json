@@ -1,0 +1,18 @@
+{
+    "name": "XMRig DevContainer",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--cap-add=IPC_LOCK"
+    ],
+    "postStartCommand": "/bin/bash .devcontainer/start.sh",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
