@@ -1,12 +1,9 @@
 {
-    "name": "XMRig DevContainer",
+    "name": "XMRig Direct Run",
     "build": {
         "dockerfile": "../Dockerfile",
         "context": ".."
     },
-    "runArgs": [
-        "--cap-add=IPC_LOCK"
-    ],
     "postStartCommand": "/bin/bash .devcontainer/start.sh",
     "customizations": {
         "vscode": {
